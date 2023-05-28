@@ -1,0 +1,193 @@
+.container__card__image {
+  height: 500px;
+}
+
+.agent__item,
+.agent__item2 {
+  position: absolute;
+  bottom: 0;
+  right: 20%;
+  z-index: 2;
+}
+.agent__item2 {
+  opacity: 0;
+  transition: 0.5s;
+}
+.agent__item2:hover {
+  opacity: 1;
+}
+
+.sun__item {
+  position: absolute;
+  top: 0;
+  right: 20%;
+}
+.cloud__item1 {
+  position: absolute;
+  left: 0;
+}
+.cloud__item2 {
+  position: absolute;
+  right: 0;
+}
+.cloud__item3 {
+  position: absolute;
+  left: 0;
+}
+.progress__bar {
+  position: absolute;
+  height: 27px;
+  width: 70%;
+  border-radius: 20px;
+  background: #d9d9d9;
+  bottom: 31px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+}
+.topic__card {
+  position: absolute;
+  font-size: 24px;
+  z-index: 9;
+  color: white;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  right: 0;
+  left: 0;
+  margin: auto;
+  max-width: 682px;
+}
+.progress__text {
+  color: white;
+  position: absolute;
+  left: -40px;
+}
+.progress__inside {
+  position: absolute;
+  width: 10%;
+  height: 27px;
+  background: #e02200;
+  border-radius: 20px;
+}
+.progress__inside__full {
+  position: absolute;
+  border-radius: 20px;
+  background: #55e000;
+  width: 100%;
+  height: 27px;
+}
+.steps__list,
+.quest__in {
+  color: white;
+  font-size: 23px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.steps__quests {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  z-index: 10;
+  text-align: center;
+}
+.steps__inside {
+  list-style: none;
+}
+.choice__buttons .yes {
+  background-color: #a1e016;
+}
+.choice__buttons .no {
+  background-color: #e02200;
+}
+.choice__buttons button {
+  padding: 22px 20px 23px 35px;
+  color: white;
+  border-radius: 17px;
+  border: none;
+  font-size: 28px;
+}
+.choice__buttons button:hover {
+  animation: 1.2s ease-in-out 0s normal none infinite running
+    trambling-animation;
+}
+.bg__main {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+@keyframes trambling-animation {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(-5deg);
+  }
+  20%,
+  40% {
+    transform: rotate(5deg);
+  }
+}
+@media (max-width: 768px) {
+  .cloud__item1 {
+    display: none;
+  }
+  .cloud__item2 {
+    display: none;
+  }
+  .cloud__item3 {
+    display: none;
+  }
+  .steps__quests {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .quests__cards {
+    min-height: 500px;
+  }
+}
+
+.quests__cards {
+  opacity: 0;
+  transform: scale(0);
+  /* display: none; */
+  background: linear-gradient(
+    90deg,
+    #073894 -1.7%,
+    rgba(0, 88, 255, 0.65) 101.33%,
+    rgba(7, 56, 148, 0.9375) 101.34%,
+    rgba(7, 56, 148, 0) 101.35%
+  );
+  min-height: 400px;
+  width: 100%;
+  border: solid; /* Убрать, нужно для видимости */
+  position: absolute;
+  overflow: hidden;
+  transition: all 2s ease;
+}
+
+.active {
+  opacity: 1;
+  display: block;
+  transform: scale(1);
+}
+
+.container__card__image {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+
+.progress__range {
+  background: green;
+  width: 0;
+  height: 100%;
+}

@@ -1,0 +1,198 @@
+@font-face {
+  font-weight: 400;
+  /* Соответствует значению normal */
+  font-family: Proto Grotesk;
+  src: url("fonts/Proto Grotesk/ProtoGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  /* Соответствует значению bold */
+  font-family: Proto Grotesk Bold;
+  src: url("fonts/Proto Grotesk/ProtoGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Proto Grotesk Light;
+  src: url("fonts/Proto Grotesk/ProtoGrotesk-Light.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  /* Соответствует значению normal */
+  font-family: Suisse Intl;
+  src: url("fonts/Suisse Intl/SuisseIntl-Medium.otf");
+}
+
+@font-face {
+  font-weight: 700;
+  /* Соответствует значению bold */
+  font-family: Suisse Intl Bold;
+  src: url("fonts/Suisse Intl/SuisseIntl-Bold.otf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Suisse Intl Light;
+  src: url("fonts/Suisse Intl/SuisseIntl-Light.otf");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Suisse Intl Regular;
+  src: url("fonts/Suisse Intl/SuisseIntl-Regular.otf");
+}
+/* Стили tour start*/
+/* Начало страницы тура start*/
+
+.title__tour {
+  font-family: 'Proto Grotesk';
+  font-style: normal;
+}
+
+.slider,
+.slide {
+  border-radius: 20px;
+}
+
+.slide,
+.slider {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.tag {
+  background: #EBEBEB;
+  border-radius: 12px;
+  height: 40px;
+}
+
+.img__icon {
+  height: 24px;
+  width: 24px;
+}
+
+.price {
+  font-family: 'Suisse Intl Bold';
+  font-size: 24px;
+}
+
+.tour__info,
+.advantages,
+.tour__text,
+.cards {
+  margin-bottom: 5%;
+}
+
+.card {
+  min-width: 270px;
+  max-width: 275px;
+  position: relative;
+  background: #FFF5CC;
+  margin: 20px;
+}
+
+.mark {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  background: transparent;
+}
+
+.card-title h5 {
+  font-family: 'Suisse Intl';
+  font-size: 24px;
+}
+
+.old__price {
+  color: #494949;
+}
+
+.button__buy button {
+  padding: 5px 40px;
+  position: relative;
+}
+
+.icon__block__btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 100%;
+  width: 10%;
+  transition: .2s linear;
+}
+
+.button__buy:hover .icon__block__btn {
+  right: 0;
+}
+
+.liked button {
+  background: transparent;
+  border: none;
+  height: 60px;
+  transition: .2s linear;
+}
+
+.liked button svg path {
+  transition: .2s linear;
+}
+
+.liked button:hover svg path {
+  fill: #E23108;
+  fill-opacity: 1;
+}
+
+.liked button:hover svg rect {
+  fill: #E23108;
+}
+
+/*Cтраницы турa end*/
+
+/*медиа-запросы на адаптацию start*/
+
+@media screen and (max-width: 1199px) {
+  .row {
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  .slide,
+  .slider {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .slide,
+  .slider {
+    height: 300px;
+  }
+
+  .row {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .slide,
+  .slider {
+    height: 200px;
+  }
+
+  .row {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/*медиа-запросы на адаптацию end*/
+/* Стили tour end*/

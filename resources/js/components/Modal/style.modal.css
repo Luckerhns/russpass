@@ -1,0 +1,37 @@
+/*modal start*/
+.modal-content {
+    border-radius: 30px;
+    border: none;
+}
+
+.icon__modal {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.input__modal {
+    padding-left: 10%;
+}
+
+.block__input__modal {
+    position: relative;
+}
+
+.form-label {
+    font-size: 24px;
+}
+
+.modal-header .modal-title {
+    font-size: 26px !important;
+    font-family: 'Proto Grotesk';
+}
+
+.modal-content {
+    background: url('images/bgModal.svg');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*modal end*/
